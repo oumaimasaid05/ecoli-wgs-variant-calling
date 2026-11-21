@@ -1,0 +1,6 @@
+data/
+*.bam
+*.bam.bai
+*.fastq
+*.fastq.gz
+*.sra

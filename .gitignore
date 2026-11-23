@@ -4,3 +4,5 @@ data/
 *.fastq
 *.fastq.gz
 *.sra
+results/multiqc/multiqc_data/
+*.zip

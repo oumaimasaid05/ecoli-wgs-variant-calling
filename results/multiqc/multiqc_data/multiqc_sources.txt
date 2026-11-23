@@ -1,6 +1,0 @@
-Module	Section	Sample Name	Source
-fastp	all_sections	SRR28519659	/home/oumaima/ecoli-wgs-variant-calling/results/fastp/fastp.json
-FastQC	all_sections	R1	/home/oumaima/ecoli-wgs-variant-calling/results/fastqc_trimmed/R1.trim_fastqc.zip
-FastQC	all_sections	R2	/home/oumaima/ecoli-wgs-variant-calling/results/fastqc_trimmed/R2.trim_fastqc.zip
-FastQC	all_sections	SRR28519659_1	/home/oumaima/ecoli-wgs-variant-calling/results/fastqc_raw/SRR28519659_1_fastqc.zip
-FastQC	all_sections	SRR28519659_2	/home/oumaima/ecoli-wgs-variant-calling/results/fastqc_raw/SRR28519659_2_fastqc.zip

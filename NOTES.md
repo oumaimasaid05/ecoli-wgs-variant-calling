@@ -6,3 +6,5 @@ Day 1: setup
 - Day 3: aligned to MG1655 with bwa-mem2 (3,083,204 reads, ~62 s), sorted/indexed with samtools
 - Day 4: variant calling with bcftools (ploidy 1): 749 raw, 44 filtered (38 SNPs, 6 indels); variant at 366125 flagged for strand bias
 - Day 5: annotated variants with SnpEff (custom MG1655 database built from GenBank file)
+- TODO: read the Rum pol paper (Jaszczur et al., NAR 2024) and compare gyrA/parC with my results
+- Day 7: figures (variants by effect, genome overview with depth, variant support) made with Python

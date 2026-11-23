@@ -8,3 +8,4 @@ Day 1: setup
 - Day 5: annotated variants with SnpEff (custom MG1655 database built from GenBank file)
 - TODO: read the Rum pol paper (Jaszczur et al., NAR 2024) and compare gyrA/parC with my results
 - Day 7: figures (variants by effect, genome overview with depth, variant support) made with Python
+- Day 7: figures made; depth spike near lacZ (~24,500x) explains the flagged artifact

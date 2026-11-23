@@ -24,7 +24,9 @@ fig, (a1, a2) = plt.subplots(2, 1, figsize=(11, 5), sharex=True,
                              gridspec_kw={"height_ratios": [3, 1]})
 a1.plot(cov["start"] / 1e6, cov["depth"], lw=0.6, color="steelblue")
 a1.axvline(1.230767, ls="--", color="black", lw=0.8)
-a1.text(1.25, cov["depth"].max() * 0.9, "umuD (deleted)", fontsize=8)
+a1.text(1.25, 130, "umuD (deleted)", fontsize=8)
+a1.set_ylim(0, 150)
+a1.text(0.40, 120, "lac region spike (~24,500x, off scale)", fontsize=8)
 a1.set_ylabel("Mean depth (1 kb windows)")
 a1.set_title("Read depth and filtered variants along the genome")
 
@@ -35,7 +37,10 @@ for _, r in v.iterrows():
 for _, r in v[v["GENE"].isin(["gyrA", "parC"])].iterrows():
     a2.annotate(r["GENE"], (r["POS"] / 1e6, 0), xytext=(r["POS"] / 1e6, 0.8),
                 ha="center", fontsize=9, arrowprops=dict(arrowstyle="-", lw=0.6))
-a2.set_ylim(-0.5, 1.3)
+from matplotlib.lines import Line2D
+h = [Line2D([0],[0], marker="o", ls="", color=c, label=k) for k, c in colors.items()]
+a2.legend(handles=h, loc="upper left", ncol=4, fontsize=7, frameon=False)
+a2.set_ylim(-0.5, 1.6)
 a2.set_yticks([])
 a2.set_xlabel("Position (Mb)")
 fig.tight_layout()

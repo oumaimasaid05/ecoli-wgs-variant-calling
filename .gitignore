@@ -6,3 +6,4 @@ data/
 *.sra
 results/multiqc/multiqc_data/
 *.zip
+snpeff_db/data/
